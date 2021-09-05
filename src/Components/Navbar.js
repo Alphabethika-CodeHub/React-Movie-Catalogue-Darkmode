@@ -12,6 +12,7 @@ const Navbar = () => {
                 <a className="mr-4" href="#">Popular</a>
                 <a className="mr-4" href="#">Upcoming</a>
                 <a className="mr-4" href="#">Liked</a>
+                <a className="mr-4" href="#">Liked</a>
             </div>
         </div>
     );
