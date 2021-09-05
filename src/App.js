@@ -4,7 +4,7 @@ import Footer from './Components/Footer';
 
 function App() {
   return (
-    <div className="bg-red-200 dark:bg-gray-400">
+    <div className="dark:bg-black transition duration-500">
       <Navbar />
       <Body />
       <Footer />
