@@ -10,10 +10,10 @@ const Navbar = () => {
                 <a className="text-red-500 font-bold text-2xl uppercase" href="#">Movie Catalogue</a>
             </div>
             <div className="mt-1">
-                <a className="mr-4 dark:text-white" href="#"> Latest</a>
-                <a className="mr-4 dark:text-white" href="#"> Popular</a>
-                <a className="mr-4 dark:text-white" href="#">Upcoming</a>
-                <a className="mr-4 dark:text-white" href="#">Liked</a>
+                <a className="mr-4 shadow py-2 px-4 rounded-md dark:bg-white" href="#"> Latest</a>
+                <a className="mr-4 shadow py-2 px-4 rounded-md dark:bg-white" href="#"> Popular</a>
+                <a className="mr-4 shadow py-2 px-4 rounded-md dark:bg-white" href="#">Upcoming</a>
+                <a className="mr-4 shadow py-2 px-4 rounded-md dark:bg-white" href="#">Liked</a>
                 <button onClick={() => setTheme(colorTheme)} className="mr-4 bg-white shadow px-2 py-1 rounded-full">{colorTheme === "light" ? <FontAwesomeIcon icon={faMoon} /> : <FontAwesomeIcon icon={faSun} />}</button>
             </div>
         </div>
