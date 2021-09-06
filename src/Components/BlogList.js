@@ -14,7 +14,6 @@ const BlogList = (props) => {
             <div className="grid grid-cols-5 gap-5">
                 {blogs.slice(0, 100).map((blog) => (
                     <div className="shadow rounded-lg hover:shadow-2xl bg-white" key={blog.id}>
-                        <hr />
                         <div className="p-3">
                             <h1>{blog.title}</h1>
                             <hr className="my-2" />

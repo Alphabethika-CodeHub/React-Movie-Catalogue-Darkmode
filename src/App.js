@@ -4,6 +4,7 @@ import Body from './Components/Body';
 import Create from './Components/Blog/Create';
 import Footer from './Components/Footer';
 import BlogDetails from './Components/Blog/BlogDetails';
+import PageNotFound from './Pages/PageNotFound';
 
 function App() {
   return (
@@ -19,6 +20,9 @@ function App() {
           </Route>
           <Route exact path="/blogs/:id">
             <BlogDetails />
+          </Route>
+          <Route exact path="*">
+            <PageNotFound />
           </Route>
         </Switch>
         <Footer />
