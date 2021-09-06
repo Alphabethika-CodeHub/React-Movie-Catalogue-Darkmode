@@ -1,14 +1,29 @@
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navbar from './Components/Navbar';
 import Body from './Components/Body';
+import Create from './Components/Blog/Create';
 import Footer from './Components/Footer';
+import BlogDetails from './Components/Blog/BlogDetails';
 
 function App() {
   return (
-    <div className="dark:bg-black transition duration-500">
-      <Navbar />
-      <Body />
-      <Footer />
-    </div>
+    <Router>
+      <div className="dark:bg-black transition duration-500">
+        <Navbar />
+        <Switch>
+          <Route exact path="/">
+            <Body />
+          </Route>
+          <Route exact path="/create">
+            <Create />
+          </Route>
+          <Route exact path="/blogs/:id">
+            <BlogDetails />
+          </Route>
+        </Switch>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
